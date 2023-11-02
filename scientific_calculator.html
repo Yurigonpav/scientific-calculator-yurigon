@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>scientific calculator</title>
+</head>
+<body>
+    <div class="scientificcalculatorT"> <!--T from table-->
+        <h5>scientific calculator</h5>
+        <input type="text" id="display" readonly>
+        <div class="buttons">
+            <button class="personalbuttons" onclick="appendToDisplay('7')">7</button>
+            <button class="personalbuttons" onclick="appendToDisplay('8')">8</button>
+            <button class="personalbuttons" onclick="appendToDisplay('9')">9</button>
+            <button class="personalbuttons" onclick="appendToDisplay('+')">+</button>
+            <button class="personalbuttons" onclick="appendToDisplay('4')">4</button>
+            <button class="personalbuttons" onclick="appendToDisplay('5')">5</button>
+            <button  class="personalbuttons" onclick="appendToDisplay('6')">6</button>
+            <button class="personalbuttons" onclick="appendToDisplay('-')">-</button>
+            <button class="personalbuttons" onclick="appendToDisplay('1')">1</button>
+            <button class="personalbuttons" onclick="appendToDisplay('2')">2</button>
+            <button class="personalbuttons" onclick="appendToDisplay('3')">3</button>
+            <button class="personalbuttons" onclick="appendToDisplay('*')">X</button>
+            <button class="personalbuttons" onclick="appendToDisplay('0')">0</button>
+            <button class="personalbuttons" onclick="appendToDisplay('.')">.</button>
+            <button class="personalbuttons" onclick="calculateRadication()">∛</button>
+            <button class="personalbuttons" onclick="appendToDisplay('/')">÷</button>
+            <button class="personalbuttons" onclick="calculateSquareRoot()">√</button>
+            <button class="personalbuttons" style="font-size: 20px;" onclick="calculateSine()">Sen</button>
+            <button class="personalbuttons" style="font-size: 20px;" onclick="calculateCosine()">Cos</button>
+            <button class="personalbuttons" style="font-size: 20px;" onclick="calculateTangent()">Tan</button>
+            <button class="personalbuttons" onclick="calculateFactorial()">!</button>
+            <button class="personalbuttons" onclick="clearDisplay()">C</button>
+            <button class="personalbuttons" style="width: 110px;" onclick="calculateResult()">=</button>
+        </div>
+    </div>
+    <div></div>
+    <script src="./assets/script.js"></script>
+</body>
+</html>
